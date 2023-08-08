@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to My Application</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"  />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .main-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-link {
+            display: block;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            color: white;
+            background-color: #007BFF;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-link:hover {
+            background-color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+<div class="main-container text-center">
+    <h1>Welcome to my application</h1>
+    <a class="btn-link" th:href="@{/teachers}">Manage Teachers</a>
+    <a class="btn-link" th:href="@{/students}">Manage Students</a>
+</div>
+</body>
+</html>
+
